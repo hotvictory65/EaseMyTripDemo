@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="9dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/rowLayout">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="5dp">
+
+       <TextView
+           android:id="@+id/tv_trip"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Trip Started"
+           android:textSize="19sp"
+           android:textStyle="bold"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/tv_time_stamp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Time : 30/6/10 11:28"
+           android:textSize="19sp"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"/>
+
+       <TextView
+           android:id="@+id/tv_lat"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Lat : 17.23423423"
+           android:textSize="19sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/tv_trip"
+           android:layout_marginTop="5dp"/>
+
+       <TextView
+           android:id="@+id/tv_long"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="12dp"
+           android:text="Long : 11.43453345"
+           android:textSize="19sp"
+           android:layout_marginTop="5dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+           />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
